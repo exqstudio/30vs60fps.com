@@ -1,0 +1,198 @@
+* {
+    font-family: monospace;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+body.stretch {        
+    background-size: 100%;    
+}
+
+body.fps30,
+body.fps60 {
+    background-color: #000;
+}
+
+#preloader {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    width: 600px;
+    left: 50%;
+    margin-left: -300px;    
+    margin-top: -200px;    
+    text-align: center;
+}
+
+#preloader h4 {
+    line-height: 24px;
+}
+
+
+#preloader-images {
+    visibility: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+}
+
+#controls {
+    position: absolute;
+    top: 50%;
+    text-align:center;
+    width: 100%;
+    margin-top: 40px;
+}
+
+#frame-rate {
+    font-size: 48px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 250px;
+    text-align: right;
+    color: #ccc;
+}
+
+#frame-rate.red {
+    color: lightcoral;
+}
+#frame-rate.orange {
+    color: gold;
+}
+#frame-rate.green {
+    color: chartreuse;
+}
+
+#fps-warning {
+    font-size: 14px;
+    color: red;
+    background: #000;
+    padding: 5px 0;
+    margin: 10px 0 0 0;
+}
+
+#social-buttons {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    width: 150px;
+}
+
+#social-buttons a {
+    display: block;
+    width: 28px;
+    height: 28px;
+    margin: 0 5px 0 0;
+    float: left;
+    background-color: #fff;
+    background-position: center center;
+}
+
+#social-buttons a.facebook { background-image: url(img/btn_facebook.png); }
+#social-buttons a.google { background-image: url(img/btn_google.png); }
+#social-buttons a.twitter { background-image: url(img/btn_twitter.png); }
+
+.fps30.f0 { background-image: url(img/frames/cs16/30/01.jpg); }
+.fps30.f1 { background-image: url(img/frames/cs16/30/02.jpg); }
+.fps30.f2 { background-image: url(img/frames/cs16/30/03.jpg); }
+.fps30.f3 { background-image: url(img/frames/cs16/30/04.jpg); }
+.fps30.f4 { background-image: url(img/frames/cs16/30/05.jpg); }
+.fps30.f5 { background-image: url(img/frames/cs16/30/06.jpg); }
+.fps30.f6 { background-image: url(img/frames/cs16/30/07.jpg); }
+.fps30.f7 { background-image: url(img/frames/cs16/30/08.jpg); }
+.fps30.f8 { background-image: url(img/frames/cs16/30/09.jpg); }
+.fps30.f9 { background-image: url(img/frames/cs16/30/10.jpg); }
+.fps30.f10 { background-image: url(img/frames/cs16/30/11.jpg); }
+.fps30.f11 { background-image: url(img/frames/cs16/30/12.jpg); }
+.fps30.f12 { background-image: url(img/frames/cs16/30/13.jpg); }
+.fps30.f13 { background-image: url(img/frames/cs16/30/14.jpg); }
+.fps30.f14 { background-image: url(img/frames/cs16/30/15.jpg); }
+.fps30.f15 { background-image: url(img/frames/cs16/30/16.jpg); }
+.fps30.f16 { background-image: url(img/frames/cs16/30/17.jpg); }
+.fps30.f17 { background-image: url(img/frames/cs16/30/18.jpg); }
+.fps30.f18 { background-image: url(img/frames/cs16/30/19.jpg); }
+.fps30.f19 { background-image: url(img/frames/cs16/30/20.jpg); }
+.fps30.f20 { background-image: url(img/frames/cs16/30/21.jpg); }
+.fps30.f21 { background-image: url(img/frames/cs16/30/22.jpg); }
+.fps30.f22 { background-image: url(img/frames/cs16/30/23.jpg); }
+.fps30.f23 { background-image: url(img/frames/cs16/30/24.jpg); }
+.fps30.f24 { background-image: url(img/frames/cs16/30/25.jpg); }
+.fps30.f25 { background-image: url(img/frames/cs16/30/26.jpg); }
+.fps30.f26 { background-image: url(img/frames/cs16/30/27.jpg); }
+.fps30.f27 { background-image: url(img/frames/cs16/30/28.jpg); }
+.fps30.f28 { background-image: url(img/frames/cs16/30/29.jpg); }
+.fps30.f29 { background-image: url(img/frames/cs16/30/30.jpg); }
+.fps60.f0 { background-image: url(img/frames/cs16/60/01.jpg); }
+.fps60.f1 { background-image: url(img/frames/cs16/60/02.jpg); }
+.fps60.f2 { background-image: url(img/frames/cs16/60/03.jpg); }
+.fps60.f3 { background-image: url(img/frames/cs16/60/04.jpg); }
+.fps60.f4 { background-image: url(img/frames/cs16/60/05.jpg); }
+.fps60.f5 { background-image: url(img/frames/cs16/60/06.jpg); }
+.fps60.f6 { background-image: url(img/frames/cs16/60/07.jpg); }
+.fps60.f7 { background-image: url(img/frames/cs16/60/08.jpg); }
+.fps60.f8 { background-image: url(img/frames/cs16/60/09.jpg); }
+.fps60.f9 { background-image: url(img/frames/cs16/60/10.jpg); }
+.fps60.f10 { background-image: url(img/frames/cs16/60/11.jpg); }
+.fps60.f11 { background-image: url(img/frames/cs16/60/12.jpg); }
+.fps60.f12 { background-image: url(img/frames/cs16/60/13.jpg); }
+.fps60.f13 { background-image: url(img/frames/cs16/60/14.jpg); }
+.fps60.f14 { background-image: url(img/frames/cs16/60/15.jpg); }
+.fps60.f15 { background-image: url(img/frames/cs16/60/16.jpg); }
+.fps60.f16 { background-image: url(img/frames/cs16/60/17.jpg); }
+.fps60.f17 { background-image: url(img/frames/cs16/60/18.jpg); }
+.fps60.f18 { background-image: url(img/frames/cs16/60/19.jpg); }
+.fps60.f19 { background-image: url(img/frames/cs16/60/20.jpg); }
+.fps60.f20 { background-image: url(img/frames/cs16/60/21.jpg); }
+.fps60.f21 { background-image: url(img/frames/cs16/60/22.jpg); }
+.fps60.f22 { background-image: url(img/frames/cs16/60/23.jpg); }
+.fps60.f23 { background-image: url(img/frames/cs16/60/24.jpg); }
+.fps60.f24 { background-image: url(img/frames/cs16/60/25.jpg); }
+.fps60.f25 { background-image: url(img/frames/cs16/60/26.jpg); }
+.fps60.f26 { background-image: url(img/frames/cs16/60/27.jpg); }
+.fps60.f27 { background-image: url(img/frames/cs16/60/28.jpg); }
+.fps60.f28 { background-image: url(img/frames/cs16/60/29.jpg); }
+.fps60.f29 { background-image: url(img/frames/cs16/60/30.jpg); }
+.fps60.f30 { background-image: url(img/frames/cs16/60/31.jpg); }
+.fps60.f31 { background-image: url(img/frames/cs16/60/32.jpg); }
+.fps60.f32 { background-image: url(img/frames/cs16/60/33.jpg); }
+.fps60.f33 { background-image: url(img/frames/cs16/60/34.jpg); }
+.fps60.f34 { background-image: url(img/frames/cs16/60/35.jpg); }
+.fps60.f35 { background-image: url(img/frames/cs16/60/36.jpg); }
+.fps60.f36 { background-image: url(img/frames/cs16/60/37.jpg); }
+.fps60.f37 { background-image: url(img/frames/cs16/60/38.jpg); }
+.fps60.f38 { background-image: url(img/frames/cs16/60/39.jpg); }
+.fps60.f39 { background-image: url(img/frames/cs16/60/40.jpg); }
+.fps60.f40 { background-image: url(img/frames/cs16/60/41.jpg); }
+.fps60.f41 { background-image: url(img/frames/cs16/60/42.jpg); }
+.fps60.f42 { background-image: url(img/frames/cs16/60/43.jpg); }
+.fps60.f43 { background-image: url(img/frames/cs16/60/44.jpg); }
+.fps60.f44 { background-image: url(img/frames/cs16/60/45.jpg); }
+.fps60.f45 { background-image: url(img/frames/cs16/60/46.jpg); }
+.fps60.f46 { background-image: url(img/frames/cs16/60/47.jpg); }
+.fps60.f47 { background-image: url(img/frames/cs16/60/48.jpg); }
+.fps60.f48 { background-image: url(img/frames/cs16/60/49.jpg); }
+.fps60.f49 { background-image: url(img/frames/cs16/60/50.jpg); }
+.fps60.f50 { background-image: url(img/frames/cs16/60/51.jpg); }
+.fps60.f51 { background-image: url(img/frames/cs16/60/52.jpg); }
+.fps60.f52 { background-image: url(img/frames/cs16/60/53.jpg); }
+.fps60.f53 { background-image: url(img/frames/cs16/60/54.jpg); }
+.fps60.f54 { background-image: url(img/frames/cs16/60/55.jpg); }
+.fps60.f55 { background-image: url(img/frames/cs16/60/56.jpg); }
+.fps60.f56 { background-image: url(img/frames/cs16/60/57.jpg); }
+.fps60.f57 { background-image: url(img/frames/cs16/60/58.jpg); }
+.fps60.f58 { background-image: url(img/frames/cs16/60/59.jpg); }
+.fps60.f59 { background-image: url(img/frames/cs16/60/60.jpg); }
