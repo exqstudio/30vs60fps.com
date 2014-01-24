@@ -40,6 +40,8 @@
             <a href="mailto:30vs60fps@exqstudio.com">30vs60fps@exqstudio.com</a>
             <br/><br/>
             <a href="https://github.com/exqstudio/30vs60fps.com" title="30vs60fps.com on Github"><img src="img/btn_github.png" alt="Github icon" /></a>             
+            <br><br/>
+            <span style="color:#ccc;">more games coming soon</span>
         </p>        
     </div>
     
