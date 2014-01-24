@@ -10,16 +10,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>    
         <script src="script.js"></script>
     <?php endif; ?>
-<script>
-(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-ga('create', 'UA-47478003-1', '30vs60fps.com');
-ga('send', 'pageview');
-
-</script>
 </head>
 <body class="stretch">
         
@@ -35,7 +25,7 @@ ga('send', 'pageview');
         <?php else: ?>
             <h4>
                 What you are about to see is a player<br/>
-                turning around 360&deg; every second, either in <b>30fps</b> or <b>60fps</b>.<br/>
+                turning around 360&deg; every second, either in 30fps or 60fps.<br/>
                 Can you tell the difference?
             </h4>            
             <div id="preloader-inner">
@@ -47,7 +37,8 @@ ga('send', 'pageview');
             Compatible browsers: Firefox, Chrome, Safari, IE9+.<br/>
             (Stretching doesn't work on &lt; IE9 version)
             <br/><br/>
-            <a href="mailto:30vs60fps@exqstudio.com">30vs60fps@exqstudio.com</a>            
+            <a href="mailto:30vs60fps@exqstudio.com">30vs60fps@exqstudio.com</a>
+            <br/><br/>
             <a href="https://github.com/exqstudio/30vs60fps.com" title="30vs60fps.com on Github"><img src="img/btn_github.png" alt="Github icon" /></a>             
         </p>        
     </div>
