@@ -37,10 +37,8 @@
             Compatible browsers: Firefox, Chrome, Safari, IE9+.<br/>
             (Stretching doesn't work on &lt; IE9 version)
             <br/><br/>
-            <a href="mailto:30vs60fps@exqstudio.com">30vs60fps@exqstudio.com</a>
-            <?php /* <br/><br/>
-            <a href="https://github.com/exqstudio.com/30vs60fps.com" title="30vs60fps.com on Github"><img src="img/btn_github.png" alt="Github icon" /></a>
-             */ ?>
+            <a href="mailto:30vs60fps@exqstudio.com">30vs60fps@exqstudio.com</a>            
+            <a href="https://github.com/exqstudio/30vs60fps.com" title="30vs60fps.com on Github"><img src="img/btn_github.png" alt="Github icon" /></a>             
         </p>        
     </div>
     
