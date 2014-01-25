@@ -16,7 +16,7 @@ var app = {
             e.preventDefault();
             app.stretchingToggle();
         });        
-        app.fpsCounter.Init();
+        app.fpsCounter.start();
         app.draw();        
     },
     // update document.body.className only when necessary        
@@ -133,7 +133,7 @@ app.fpsCounter = {
         app.fpsCounter.lastLoop = new Date();
         app.fpsCounter.currentLoop = null;
     },
-    Init: function() {
+    start: function() {
         app.fpsCounter.$warning = $('#fps-warning');            
         app.fpsCounter.$rate = $('#frame-rate');
         app.fpsCounter.rate_obj = app.fpsCounter.$rate.get(0);
